@@ -1,0 +1,16 @@
+[package]
+name = "janet-sys"
+version = "0.1.0"
+authors = ["Yusuf Simonson <simonson@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+description = "Low-level bindings to janet"
+license = "GPL-2.0-or-later"
+repository = "https://github.com/ysimonson/janet-sys"
+
+[lib]
+name = "janet_sys"
+path = "src/lib.rs"
+
+[build-dependencies]
+bindgen = "0.42.2"
